@@ -11,7 +11,7 @@ Given the processed interaction data, the whole framework mainly contains two mo
 For more details, please read our paper: 《Debiased Cognition Representation Learning for Knowledge Tracing》
 
 ### How to train the DACE model
-1. Data Preparation: Download and unzip [assist09 data](https://drive.google.com/drive/folders/1HPL5vmHSFiCwfvhKF-9Hm4djqKMVJScy?usp=drive_link) in `data` directory, download and unzip [embedding data](https://drive.google.com/drive/folders/1Muqxkab_xt9SiRxFPfHeP48BQDCYP6ek?usp=drive_link) in `embeddings` directory.
+1. Data Preparation: Download and unzip [assist09 data](https://drive.google.com/uc?export=download&id=14wBw8BHf9e328v4dD5EdsRMtR_gCFcdq) in `data` directory, download and unzip [embedding data](https://drive.google.com/uc?export=download&id=16s9jNZZSkxT33Hb7r1OY7PqkJBzhC5DV) in `embeddings` directory.
 2. Bias Injection: Change `config.py`, such as `biased types (i.e., plagiarism, guessing), inject proportion: p`
 3. Main Files: Run the following command: 
     ```
