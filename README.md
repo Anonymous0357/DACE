@@ -27,20 +27,53 @@ Please note that, this model is also suitable for regular KT prediction. If you 
 
 ### Results
 
-1. Assist09 
-
-| Biased Types   | AUC(%) | ACC(%) |
-| -------------- | ------ | ------ |
-| None           | 81.33  | 75.48  |
-| Plagiarism     | 80.44  | 73.76  |
-| Plagiarism-pro | 79.45  | 74.42  |
-| Guessing       | 80.72  | 74.90  |
-
-2. Ednet 
-
-| Biased Types   | AUC(%) | ACC(%) |
-| -------------- | ------ | ------ |
-| None           | 76.06  | 70.48  |
-| Plagiarism     | 74.52  | 68.22  |
-| Plagiarism-pro | 72.79  | 68.15  |
-| Guessing       | 75.03  | 69.86  |
+<table>
+  <tr>
+    <th>Dataset</th>
+    <th>Biased Types</th>
+    <th>AUC(%)</th>
+    <th>ACC(%)</th>
+  </tr>
+  <tr>
+    <td rowspan="4">Assist09</td>
+    <td>None</td>
+    <td>81.33</td>
+    <td>75.48</td>
+  </tr>
+  <tr>
+    <td>Plagiarism</td>
+    <td>80.44</td>
+    <td>73.76</td>
+  </tr>
+  <tr>
+    <td>Plagiarism-pro</td>
+    <td>79.45</td>
+    <td>74.42</td>
+  </tr>
+  <tr>
+    <td>Guessing</td>
+    <td>80.72</td>
+    <td>74.90</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Ednet</td>
+    <td>None</td>
+    <td>76.06</td>
+    <td>70.48</td>
+  </tr>
+  <tr>
+    <td>Plagiarism</td>
+    <td>74.52</td>
+    <td>68.22</td>
+  </tr>
+  <tr>
+    <td>Plagiarism-pro</td>
+    <td>72.79</td>
+    <td>68.15</td>
+  </tr>
+  <tr>
+    <td>Guessing</td>
+    <td>75.03</td>
+    <td>69.86</td>
+  </tr>
+</table>
