@@ -30,16 +30,18 @@ class Config:
   tuning_epochs = 100 # maximum epochs
   disentangle = 1
   
+  #####################
   # biased type
-  biased_type = "None"  # None, plagiarism, plagiarism_by_pro, guess
-  inject_proportion = 0.0
-  p = 0.0
+  biased_type = "None"  # [None, plagiarism, plagiarism_by_pro, guess]
+  inject_proportion = 0.3 # for reproduction, please set to 0.3
+  p = 0.3 # plagiarism, plagiarism_by_pro: 0.3; guess : 0.5
+  #####################
 
   # log and save
-  log_path = f'logs/{biased_type}_biased_injcet_{inject_proportion}_p_{p}.log'
-  save_path = f'save/{biased_type}_biased_injcet_{inject_proportion}_p_{p}'
-  dkt_log_path = f'logs/{biased_type}_biased_injcet_{inject_proportion}_p_{p}_dkt.log'
-  dkt_save_path = f'save/dkt_{biased_type}_biased_injcet_{inject_proportion}_p_{p}'
+  log_path = f'logs/{dataset}_{biased_type}_injcet_{inject_proportion}_p_{p}.log'
+  save_path = f'save/{dataset}_{biased_type}_injcet_{inject_proportion}_p_{p}'
+  dkt_log_path = f'logs/{dataset}_{biased_type}_injcet_{inject_proportion}_p_{p}_dkt.log'
+  dkt_save_path = f'save/{dataset}_{biased_type}_injcet_{inject_proportion}_p_{p}_dkt'
 
 # class Config:
 #   # dataset
@@ -73,13 +75,15 @@ class Config:
 #   tuning_epochs = 100 # maximum epochs
 #   disentangle = 1
   
-#   # biased type
-#   biased_type = "None"  # None, plagiarism, plagiarism_by_pro, guess
-#   inject_proportion = 0.0
-#   p = 0.0
+#  #####################
+#  # biased type
+#  biased_type = "None"  # [None, plagiarism, plagiarism_by_pro, guess]
+#  inject_proportion = 0.3 # for reproduction, please set to 0.3
+#  p = 0.3 # plagiarism, plagiarism_by_pro: 0.3; guess : 0.5
+#  #####################
 
 #   # log and save
-#   log_path = f'logs/{dataset}_{biased_type}_biased_injcet_{inject_proportion}_p_{p}.log'
-#   save_path = f'save/{dataset}_{biased_type}_biased_injcet_{inject_proportion}_p_{p}'
-#   dkt_log_path = f'logs/{dataset}_{biased_type}_biased_injcet_{inject_proportion}_p_{p}_dkt.log'
-#   dkt_save_path = f'save/{dataset}_dkt_{biased_type}_biased_injcet_{inject_proportion}_p_{p}'
+#   log_path = f'logs/{dataset}_{biased_type}_injcet_{inject_proportion}_p_{p}.log'
+#   save_path = f'save/{dataset}_{biased_type}_injcet_{inject_proportion}_p_{p}'
+#   dkt_log_path = f'logs/{dataset}_{biased_type}_injcet_{inject_proportion}_p_{p}_dkt.log'
+#   dkt_save_path = f'save/{dataset}_{biased_type}_injcet_{inject_proportion}_p_{p}_dkt'
